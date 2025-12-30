@@ -240,7 +240,6 @@ EnhancedVolcano(res, lab = rownames(res),
 На получившемся volcanoplot`е наглядно представлены изменения в экспрессии определённых генов в экспериментальных условиях, однако, чтобы сделать выводы на основе этого, нужно знать за что эти гены отвечают. В случае с Saccharomyces, можно воспользоваться Sacchromyces Genome Database: [https://yeastgenome.org].
 
 
-![](SaccharomycesGenomeDatabase.png)
 
 
 
