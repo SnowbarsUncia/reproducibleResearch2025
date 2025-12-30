@@ -226,7 +226,6 @@ res <- results(dds)
 DEGs <- res[abs(res$log2FoldChange) > 1 & res$padj < 0.05 & complete.cases(res$padj), ]
 DEGs <- DEGs[order(DEGs$log2FoldChange), ]
 DEGs$Transcript <- row.names(DEGs)
-library(openxlsx)
 write.xlsx(x = DEGs, file = "DEGs_yeast.xlsx", rowNames = TRUE)
 
 #Визуализация данных
@@ -267,6 +266,7 @@ EnhancedVolcano(res, lab = rownames(res),
 # Выводы
 
 В результате данного анализа, можно заключить, что введение 5 mM D-лактата, является по большей части стрессовым фактором, затрагивающим множество метаболических путей Saccharomyces cerevisiae, и в целом, снижает скорость и интенсивность роста и развития. Реакция saccharomyces cerevisiae проявляется на данные условия проявляется в увеличении интесивности биосинтетических и биоэнергетических процессов, которое, однако, направлено не на рост и развитие клеток, а на их адаптацию к стрессовым условиям и минимизацию получаемого от них ущерба.
+
 
 
 
