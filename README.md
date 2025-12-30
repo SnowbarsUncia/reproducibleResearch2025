@@ -163,10 +163,10 @@ ggplot(yeast_growth_inhibition, aes(x=Condition, y=RGR2, fill=Condition)) +
   ylab("Relative growth rate") +
   xlab("") +
   theme_bw(base_size = 16)
-ggsave("yeast_pH_compensation", device=png, width=20, height=12, units="cm") # Сохранение получившихся графиков в рабочей директории
+ggsave("yeast_relative_growth_rate", device=png, width=20, height=12, units="cm") # Сохранение получившихся графиков в рабочей директории
 ```
 
-
+![](yeast_relative_growth_rate.png)
 
 ## Анализ дифференциальной экспрессии генов
 
@@ -185,6 +185,7 @@ ggsave("yeast_pH_compensation", device=png, width=20, height=12, units="cm") # �
 ### Анализ дифференциальной экспрессии в R:
 
 ___
+
 
 
 
