@@ -257,7 +257,7 @@ p.adj это adjusted p-value, иными словами это скоррект
 
 Ниже указаны ключевые гены, экспрессия которых изменилась в экспериментальных условиях:
 
-| Ген | Описание | Изменение экспрессии | Интерпретация |
+| Название гена | Описание | Изменение экспрессии | Интерпретация |
 |--------------|---------------|---------------|----------------|
 | [CHR/YGR189C](https://yeastgenome.org/locus/S000003421) | Chitin transglycosylase; functions in the transfer of chitin to beta(1-6) and beta(1-3) glucans in the cell wall; similar and functionally redundant to Utr2; localizes to sites of polarized growth; expression induced by cell wall stress | Повышение | Повышение экспрессии данного гена, как правило вызвано стрессом клеточной стенки |
 | [REX3/YLR107W](https://yeastgenome.org/locus/S000004097) | RNA exonuclease; required for maturation of the RNA component of RNase MRP; functions redundantly with Rnh70p and Rex2p in processing of U5 snRNA and RNase P RNA; member of RNase D family of exonucleases | Повышение | Продукт этого гена - РНК-экзонуклеаза, принимающая непосредственное участие в процессинге РНК |
@@ -271,6 +271,7 @@ p.adj это adjusted p-value, иными словами это скоррект
 # Выводы
 
 В результате данного анализа, можно заключить, что введение 5 mM D-лактата, является по большей части стрессовым фактором, затрагивающим множество метаболических путей Saccharomyces cerevisiae, и в целом, снижает скорость и интенсивность роста и развития. Реакция saccharomyces cerevisiae проявляется на данные условия проявляется в увеличении интесивности биосинтетических и биоэнергетических процессов, которое, однако, направлено не на рост и развитие клеток, а на их адаптацию к стрессовым условиям и минимизацию получаемого от них ущерба.
+
 
 
 
