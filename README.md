@@ -75,14 +75,17 @@
 `export PATH=$PATH:/media/secondary/apps/sratoolkit.3.0.0-ubuntu64/bin/`
 
 Затем, можно начинать, собственно, скачивание данных:
-`fasterq-dump --threads 2 -A --progress SRR24466389; fasterq-dump --threads 2 -A --progress SRR24466390; fasterq-dump --threads 2 -A --progress SRR24466391; fasterq-dump --threads 2 -A --progress SRR24466380; fasterq-dump --threads 2 -A --progress SRR24466381; fasterq-dump --threads 2 -A --progress SRR24466382`
+```
+fasterq-dump --threads 2 -A --progress SRR24466389; fasterq-dump --threads 2 -A --progress SRR24466390; fasterq-dump --threads 2 -A --progress SRR24466391; fasterq-dump --threads 2 -A --progress SRR24466380; fasterq-dump --threads 2 -A --progress SRR24466381; fasterq-dump --threads 2 -A --progress SRR24466382
+```
 
 ## Выравнивание первичных прочтений на референс:
 
 ### Скачивание референсной последовательности:
-`wget https://ftp.ensembl.org/pub/release-108/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.108.gtf.gz`;
-`wget https://ftp.ensembl.org/pub/release-108/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.tople
-vel.fa.gz`
+```
+wget https://ftp.ensembl.org/pub/release-108/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.108.gtf.gz wget https://ftp.ensembl.org/pub/release-108/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.tople
+vel.fa.gz
+```
 
 ### Распаковка архивов:
 `gunzip Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz`;
@@ -93,7 +96,9 @@ vel.fa.gz`
 `hisat2_extract_splice_sites.py Saccharomyces_cerevisiae.R64-1-1.108.gtf > yeast_splice_sites.txt`
 
 ### Выравнивание с помощью hisat2 и сортировка bam-файла с помощью samtools:
-``for sample in `ls *_1.fastq`; do base=$(basename $sample "_1.fastq"); hisat2 -x yeast_index --known-splicesite-infile yeast_splice_sites.txt -p 8 -1 ${base}_1.fastq -2 ${base}_2.fastq | samtools view --threads 2 -bS | samtools sort --threads 2 -o $base.bam; done``
+```
+for sample in `ls *_1.fastq`; do base=$(basename $sample "_1.fastq"); hisat2 -x yeast_index --known-splicesite-infile yeast_splice_sites.txt -p 8 -1 ${base}_1.fastq -2 ${base}_2.fastq | samtools view --threads 2 -bS | samtools sort --threads 2 -o $base.bam; done
+```
 
 ## Построение графиков в среде R
 
@@ -262,5 +267,6 @@ EnhancedVolcano(res, lab = rownames(res),
 # Выводы
 
 В результате данного анализа, можно заключить, что введение 5 mM D-лактата, является по большей части стрессовым факт ором, затрагивающим множество метаболических путей Saccharomyces cerevisiae, и в целом, снижает скорость и интенсивность роста и развития. Реакция saccharomyces cerevisiae проявляется на данные условия проявляется в увеличении интесивности биосинтетических и биоэнергетических процессов, которое, однако, направлено не на рост и развитие клеток, а на их адаптацию к стрессовым условиям и минимизацию получаемого от них ущерба.
+
 
 
