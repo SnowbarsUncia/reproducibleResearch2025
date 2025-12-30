@@ -133,6 +133,7 @@ plot.PO # Отрисовка получившегося графика
 ggsave("PO_with_stats.png", device=png, width=20, height=12, units="cm") # Сохранение полученного графика в рабочей директории
 ```
 
+
 ![](PO_with_stats.png)
 
 
@@ -167,6 +168,7 @@ ggplot(yeast_growth_inhibition, aes(x=Condition, y=RGR2, fill=Condition)) +
 ggsave("yeast_relative_growth_rate", device=png, width=20, height=12, units="cm") # Сохранение получившихся графиков в рабочей директории
 ```
 
+
 ![](yeast_relative_growth_rate.png)
 
 
@@ -187,6 +189,7 @@ ggsave("yeast_relative_growth_rate", device=png, width=20, height=12, units="cm"
 ### Анализ дифференциальной экспрессии в R:
 
 ___
+
 
 
 
