@@ -180,7 +180,7 @@ ggsave("yeast_relative_growth_rate", device=png, width=20, height=12, units="cm"
 
 ### Подсчёт экспрессии:
 
-`featureCounts -s 2 -T 2 -p -a Saccharomyces_cerevisiae.R64-1-1.108.gtf \-o allSamples.featureCounts.txt $(ls *.bam)`
+`featureCounts -s 2 -T 2 -p -a Saccharomyces_cerevisiae.R64-1-1.108.gtf -o allSamples.featureCounts.txt $(ls *.bam)`
 
 ### Скачивание данных с удалённого сервера для их дальнейшей визуализации в R (Windows OS):
 
@@ -189,6 +189,7 @@ ggsave("yeast_relative_growth_rate", device=png, width=20, height=12, units="cm"
 ### Анализ дифференциальной экспрессии в R:
 
 ___
+
 
 
 
