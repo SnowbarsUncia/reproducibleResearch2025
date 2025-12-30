@@ -248,7 +248,8 @@ EnhancedVolcano(res, lab = rownames(res),
 
 | Ген | Описание | Изменение экспрессии | Интерпретация |
 |--------------|---------------|---------------|----------------|
-| [CHR/YGR189C](https://yeastgenome.org/locus/S000003421) | Chitin transglycosylase; functions in the transfer of chitin to beta(1-6) and beta(1-3) glucans in the cell wall; similar and functionally redundant to Utr2; localizes to sites of polarized growth; expression induced by cell wall stress | Повышение | Повышение экспрессии данного гена, как правило вызвано стрессом клеточной стенки |
+| [CHR/YGR189C](https://yeastgenome.org/locus/S000003421) | Chitin transglycosylase; functions in the transfer of chitin to beta(1-6) and beta(1-3) glucans in the cell wall; similar and functionally redundant to Utr2; localizes to sites of polarized growth; expression induced by cell wall stress |  Повышение | Повышение экспрессии данного гена, как правило вызвано стрессом клеточной стенки |
+
 
 
 
