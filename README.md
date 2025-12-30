@@ -91,7 +91,7 @@ vel.fa.gz`
 `hisat2_extract_splice_sites.py Saccharomyces_cerevisiae.R64-1-1.108.gtf > yeast_splice_sites.txt`
 
 ### Выравнивание с помощью hisat2 и сортировка bam-файла с помощью samtools:
-`for sample in `ls *_1.fastq`; do base=$(basename $sample "_1.fastq"); hisat2 -x yeast_index --known-splicesite-infile yeast_splice_sites.txt -p 8 -1 ${base}_1.fastq -2 ${base}_2.fastq | samtools view --threads 2 -bS | samtools sort --threads 2 -o $base.bam; done`
+``for sample in `ls *_1.fastq`; do base=$(basename $sample "_1.fastq"); hisat2 -x yeast_index --known-splicesite-infile yeast_splice_sites.txt -p 8 -1 ${base}_1.fastq -2 ${base}_2.fastq | samtools view --threads 2 -bS | samtools sort --threads 2 -o $base.bam; done``
 
 ## Построение графиков в среде R
 
@@ -114,6 +114,7 @@ ___
 ### Анализ дифференциальной экспрессии в R:
 
 ___
+
 
 
 
