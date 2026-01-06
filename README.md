@@ -258,12 +258,13 @@ p.adj это adjusted p-value, иными словами это скоррект
 | [LEU1/YGL009C](https://yeastgenome.org/locus/S000002977) | Isopropylmalate isomerase; catalyzes the second step in the leucine biosynthesis pathway | Понижение | Экспрессия этого гена, может быть снижена из-за высокого содержания лейцина |
 | [YDR](https://yeastgenome.org/locus/S000002540) | Dubious open reading frame; unlikely to encode a functional protein, based on available experimental and comparative sequence data; partially overlaps YDR134C | Понижение | - |
 | [SED1/YDR077W](https://yeastgenome.org/locus/S000002484) | Major stress-induced structural GPI-cell wall glycoprotein; associates with translating ribosomes, possible role in mitochondrial genome maintenance; ORF contains two distinct variable minisatellites; SED1 has a paralog, SPI1, that arose from the whole genome duplication | Повышение | Повышение экспрессии этого гена часто вызвано различными типами стресса, чаще всего температурным |
-| [ATP17/YDR377W](https://yeastgenome.org/locus/S000002785) | Subunit f of the F0 sector of mitochondrial F1F0 ATP synthase; F1F0 ATP synthase is a large, evolutionarily conserved enzyme complex required for ATP synthesis | Повышение | Поскольку продукт данного гена является критически важным для работы АТФ-синтазы, увелечение экспресии этого гена может привести повышению интенсивности дыхания |
+| [ATP17/YDR377W](https://yeastgenome.org/locus/S000002785) | Subunit f of the F0 sector of mitochondrial F1F0 ATP synthase; F1F0 ATP synthase is a large, evolutionarily conserved enzyme complex required for ATP synthesis | Повышение | Поскольку продукт данного гена является критически важным для работы АТФ-синтазы, увеличение экспрессии этого гена может привести к повышению интенсивности дыхания |
 
 
 # Выводы
 
 В результате данного анализа, можно заключить, что введение 5 mM D-лактата, является по большей части стрессовым фактором, затрагивающим множество метаболических путей _Saccharomyces cerevisiae_, и в целом, снижает скорость и интенсивность роста и развития. Реакция _Saccharomyces cerevisiae_ проявляется на данные условия проявляется в увеличении интенсивности биосинтетических и биоэнергетических процессов, которое, однако, направлено не на рост и развитие клеток, а на их адаптацию к стрессовым условиям и минимизацию получаемого от них ущерба.
+
 
 
 
