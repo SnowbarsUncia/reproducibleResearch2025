@@ -85,8 +85,7 @@ fasterq-dump --threads 2 -A --progress SRR24466389; fasterq-dump --threads 2 -A 
 
 ### Скачивание референсной последовательности:
 ```
-wget https://ftp.ensembl.org/pub/release-108/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.108.gtf.gz wget https://ftp.ensembl.org/pub/release-108/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.tople
-vel.fa.gz
+wget https://ftp.ensembl.org/pub/release-108/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.108.gtf.gz wget https://ftp.ensembl.org/pub/release-108/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.tople vel.fa.gz
 ```
 
 ### Распаковка архивов:
@@ -265,6 +264,7 @@ p.adj это adjusted p-value, иными словами это скоррект
 # Выводы
 
 В результате данного анализа, можно заключить, что введение 5 mM D-лактата, является по большей части стрессовым фактором, затрагивающим множество метаболических путей _Saccharomyces cerevisiae_, и в целом, снижает скорость и интенсивность роста и развития. Реакция _Saccharomyces cerevisiae_ проявляется на данные условия проявляется в увеличении интесивности биосинтетических и биоэнергетических процессов, которое, однако, направлено не на рост и развитие клеток, а на их адаптацию к стрессовым условиям и минимизацию получаемого от них ущерба.
+
 
 
 
